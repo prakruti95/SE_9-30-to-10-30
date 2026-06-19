@@ -1,0 +1,21 @@
+1)github - drag and drop
+Create Folder With the Name of C_Lan
+Upload File inside folder
+Create File inside folder
+
+
+2)github - github desktop software
+Create Folder With the Name of database
+Upload File inside folder
+
+
+3)gitcmd - git cmd 
+Create Folder With the Name of xyz
+Upload File inside folder
+and store data in git using command
+
+
+
+
+
+
