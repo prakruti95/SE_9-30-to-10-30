@@ -1,0 +1,33 @@
+1. Presentation Layer
+2. Application Layer(Logical Layer)
+3. Data Layer
+
+SDLC Stages
+1)Requirement Gathering
+2)Analysis
+3)Design
+4)Implementation
+5)Testing
+6)Maintenance 
+  a)corrective
+  b)adaptive
+  c)perfective
+
+UML -> Unified Modeling Language
+
+
+Diagram
+
+Activity
+Flowchart
+DFD
+Usecase
+
+
+
+
+
+
+
+
+
