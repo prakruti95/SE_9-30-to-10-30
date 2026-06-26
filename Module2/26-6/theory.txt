@@ -1,0 +1,23 @@
+# -> Preprocessor
+include 
+
+headerfiles/library
+stdio -> standard input output
+conio -> console input output
+
+.h
+
+-> every program will execute from main method
+main()
+{
+}
+
+void -> return null value
+printf -> print something
+getch() -> terminate the program
+
+data type:
+
+
+
+
