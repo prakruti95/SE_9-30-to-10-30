@@ -1,0 +1,33 @@
+data type:
+
+integer - int - numeric value - %d
+float - float - decimal value [4 byte] - %f
+character - char - single character - %c
+double -double - decimal value [8 byte] - %lf
+
+variable declaration:
+
+datatype variablename;
+int a; -> r
+int 1a; -> w
+
+int tops tech-> w
+int tops_tech-> r
+
+-> variable name should be start with alphabet
+
+operators:
+1)arithmetic operator: +,-,*,/,%
+2)shorthand operator: +=,-=,*=,/=,%=
+
+a+=b -> a=a+b
+
+
+c=a+b
+a=a+b
+
+
+
+
+
+
