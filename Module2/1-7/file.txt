@@ -1,0 +1,24 @@
+Single Line Comment -> //
+Multi Line Comment -> ctrl+A ,Ctrl+/
+
+Operators:
+
+1)Relational operator:
+<,>,<=,>=,==,!=
+
+a<b
+b>a
+a=b
+a==b
+a!=b
+
+Conditional Statement:
+if
+else
+else if
+nested if
+switch-case-break
+
+
+
+
