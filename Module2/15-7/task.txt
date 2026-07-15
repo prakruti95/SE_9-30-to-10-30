@@ -1,0 +1,8 @@
+printf("tops");
+tops4
+
+->loop
+->condition
+->function
+->array
+->variable declare
