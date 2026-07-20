@@ -1,0 +1,38 @@
+Function : when you have to write same code again and again at that time 
+we are using function
+
+Types of Function
+1)User Defined Function:
+ -> with para with return
+ -> with para without return
+ -> with return without para
+ -> without para without return
+
+
+2)Inbuilt Function :
+String Functions
+Math Functions
+
+String Functions:
+strlen
+strcat
+strcmp
+strcpy
+strlwr
+strupr
+strrev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
