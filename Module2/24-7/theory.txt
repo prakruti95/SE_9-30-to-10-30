@@ -1,0 +1,10 @@
+math functions:
+
+floor
+ceil
+abs
+sqrt
+pow
+
+header file:
+#include<math.h>
