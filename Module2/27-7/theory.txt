@@ -1,0 +1,18 @@
+Array:Collection of elements that is called an array
+
+Types of Array
+1)Single-One
+2)Multi-Two
+
+-> [size]
+-> array's index will start with 0.
+
+marks[0]
+
+
+56
+67
+45
+78
+98
+78
