@@ -1,0 +1,3 @@
+-> From Given Array Find Biggest Digit
+-> From Given Array Find Lowest Digit
+-> From Given Array Find sum of all Digit
