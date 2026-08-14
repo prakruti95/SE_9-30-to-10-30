@@ -1,0 +1,12 @@
+Constructor:When Method having a same as a classname that is called constructor
+
+Types of constructor
+1)default
+2)parameterized
+3)copy
+
+-> constructor does not have a return type
+-> constructor calls automatically when object is created
+-> 
+Tops t1;
+Tops t1 = Tops();
