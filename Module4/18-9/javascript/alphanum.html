@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        function isalphanumeric(elem,msg)
+        {
+            var alphanumexp=/^[a-zA-Z0-9]+$/;
+
+            if(elem.value.match(alphanumexp))
+		    {
+			    return false;
+			}
+		    else
+		    {
+			    alert(msg);
+			    elem.focus();
+			    return true;
+		    }
+        }
+
+    </script>
+</head>
+<body>
+
+
+
+<form>
+	Enter Alphanumeric Value:<input type="text" name="data" id="data">
+	<input type="submit" value="Go" onclick="isalphanumeric(document.getElementById('data'),'Please Enter Alphanumeric Only')">
+</form>
+    
+</body>
+</html>
