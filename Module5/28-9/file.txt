@@ -1,0 +1,15 @@
+SELECT * FROM location LEFT JOIN students ON location.id = students.id
+UNION
+SELECT * FROM location RIGHT JOIN students ON location.id = students.id
+
+SELECT * FROM location JOIN students ON location.id = students.id
+
+CREATE VIEW myview as SELECT name,surname FROM testing_students
+
+procedure
+cursor
+trigger
+
+add INDEX
+
+ALTER TABLE `users` ADD `xyz` INT NOT NULL AFTER `salary`, ADD INDEX (`xyz`);
