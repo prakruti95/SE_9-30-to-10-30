@@ -1,0 +1,82 @@
+Procedure:
+DELIMITER //
+
+	CREATE PROCEDURE deleteproc(INOUT myid int)
+    
+    BEGIN
+    	DELETE FROM students WHERE id=myid;
+    END //
+
+DELIMITER ;
+
+1. USE DATABASE database_name;
+
+2. SELECT DISTINCT Dr_Name,Speciality FROM doctors;
+
+3. SELECT column1, column2....columnN FROM
+{AND|OR} CONDITION-2;
+
+4.SELECT column1, column2.
+FROM (val-1, val-2, val-N);
+
+5.
+SELECT column1, column2. column table_name WHERE column_name
+FROM BETWEEN val-1 AND val-2;
+
+SELECT * FROM Products WHERE Price BETWEEN 10 AND 20;
+
+6.
+SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country;
+
+7.
+SELECT SUM(column_name) FROM table_name WHERE CONDITION GROUP BY
+column_name HAVING (arithematicfunction condition)
+
+8.
+CREATE UNIQUE INDEX index_name ON table_name( column1, column2,...columnN);
+
+9.
+DESC table_name;
+
+10.
+COMMIT;
+
+11.
+ROLLBACK;
+-----------------------------------------------------
+-> 
+SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country;
+
+
+->
+SELECT COUNT(CustomerID), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerID) > 5;
+
+->
+SELECT DISTINCT column1, column2, ... FROM table_name;
+
+->
+GRANT EXECUTE ON FUNCTION Calculatesalary TO '*'@'localhost'; 
+
+->
+REVOKE SELECT ON  Users FROM 'Amit'@'localhost'; 
+
+->
+SELECT * FROM Customers WHERE Country IN ('Germany', 'France', 'UK');
+
+->
+and/or
+->SELECT * FROM Customers WHERE Country = 'Spain' AND CustomerName LIKE 'G%';
+->SELECT * FROM Customers WHERE Country = 'Germany' OR Country = 'Spain';
+
+->
+between-> SELECT * FROM Products WHERE Price BETWEEN 10 AND 20;
+
+
+
