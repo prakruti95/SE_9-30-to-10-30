@@ -1,0 +1,101 @@
+cases:
+
+SELECT OrderID, Quantity,
+CASE
+    WHEN Quantity > 30 THEN "The quantity is greater than 30"
+    WHEN Quantity = 30 THEN "The quantity is 30"
+    ELSE "The quantity is under 30"
+END
+FROM OrderDetails;
+
+if:
+1.
+SELECT IF(500<1000, "YES", "NO");
+
+SELECT IF(STRCMP("hello","bye") = 0, "YES", "NO");
+
+
+2.
+SELECT OrderID, Quantity, IF(Quantity>10, "MORE", "LESS")
+FROM OrderDetails;
+
+3.
+CREATE TABLE Geektable (value VARCHAR(50) NULL DEFAULT NULL);
+
+DELIMITER $$ 
+CREATE PROCEDURE ADD()
+ BEGIN
+  DECLARE a INT Default 1 ;
+  simple_loop: LOOP     
+    insert into Geektable values(a);
+    SET a=a+1;
+    IF a=11 THEN
+      LEAVE simple_loop;
+    END IF;
+ END LOOP simple_loop;
+END $$
+
+
+
+
+
+
+
+CALL ADD();
+Select value 
+from Geektable;
+
+==========================================================
+cursor->
+1.
+CREATE TABLE tutorials (
+   ID INT PRIMARY KEY,
+   TITLE VARCHAR(100),
+   AUTHOR VARCHAR(40),
+   DATE VARCHAR(40)
+);
+
+2.
+Insert into tutorials values
+(1, 'Java', 'Krishna', '2019-09-01'),
+(2, 'JFreeCharts', 'Satish', '2019-05-01'),
+(3, 'JavaSprings', 'Amit', '2019-05-01'),
+(4, 'Android', 'Ram', '2019-03-01'),
+(5, 'Cassandra', 'Pruthvi', '2019-04-06');
+
+3.
+CREATE TABLE backup (
+   ID INT,
+   TITLE VARCHAR(100),
+   AUTHOR VARCHAR(40),
+   DATE VARCHAR(40)
+);
+
+4.
+DELIMITER //
+CREATE PROCEDURE ExampleProc()
+   BEGIN
+      DECLARE done INT DEFAULT 0;
+      DECLARE tutorialID INTEGER;
+      DECLARE tutorialTitle, tutorialAuthor, 
+	  tutorialDate VARCHAR(20);
+      DECLARE cur CURSOR FOR SELECT * FROM tutorials;
+      DECLARE CONTINUE HANDLER FOR NOT FOUND SET done = 1;
+      OPEN cur;
+      label: LOOP
+      FETCH cur INTO tutorialID, tutorialTitle, tutorialAuthor, 
+	  tutorialDate;
+      INSERT INTO backup VALUES(tutorialID, tutorialTitle, 
+	  tutorialAuthor, tutorialDate);
+      IF done = 1 THEN LEAVE label;
+      END IF;
+      END LOOP;
+      CLOSE cur;
+   END//
+DELIMITER ;
+
+5.
+CALL ExampleProc;
+
+6.
+select * from backup;
